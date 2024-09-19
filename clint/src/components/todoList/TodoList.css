@@ -1,0 +1,49 @@
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #FF014F;
+    border-color: #FF014F;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%; /* Make the checkbox circle */
+    background-color: #eee;
+    border: 2px solid #ddd;
+  }
+  
+  .checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  
+  
